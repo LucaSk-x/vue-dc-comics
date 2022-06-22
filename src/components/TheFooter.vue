@@ -4,7 +4,7 @@
             <div class="top-footer d-flex justify-content-between position-relative overflow-hidden p-3">
                 <div class="top-footer-left d-flex">
                     <div class="first">
-                        <ul>
+                        <ul  class="list-unstyled">
                             <ul class="list-unstyled">
                                 <li><h6 class="text-white text-uppercase">Dc Comics</h6></li>
                                 <li class="text-light" v-for="(link, i) in linksFooter.dcComics" :key="i"> {{link.name}} </li>
@@ -30,14 +30,6 @@
                 </div>
                 <div class="top-footer-right">
                     <img class="position-absolute" src="../../public/img/dc-logo-bg.png" alt="">
-                </div>
-            </div>
-            <div class="bottom-footer d-flex justify-content-between py-3">
-                <div class="bottom-footer-left">
-                    <div class="my-btn"><button class="text-uppercase text-white">sing up now!</button></div>
-                </div>
-                <div class="bottom-footer right d-flex align-items-center">
-                    
                 </div>
             </div>
         </div>
@@ -187,14 +179,5 @@
             }
         }
 
-        .bottom-footer {
-            background-color: #303030;
-
-            button {
-                background-color: #303030;
-                border: 2px solid blue;
-                padding: 5px;
-            }
-        }
     }
 </style>
