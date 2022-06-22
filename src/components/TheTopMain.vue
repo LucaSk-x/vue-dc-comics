@@ -1,14 +1,18 @@
 <template>
     <div class="top-main">
         <div class="container py-2">
-            <TheTopMainCard></TheTopMainCard>
+            <div class="row">
+                <div class="col-2" v-for="(card, i) in product" :key="i">
+                    <TheTopMainCard :product="product"></TheTopMainCard>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 
 <script>
-    import TheTopMainCard from './components/TheTopMainCard.vue'
+    import TheTopMainCard from './TheTopMainCard.vue'
 
 
     export default {
