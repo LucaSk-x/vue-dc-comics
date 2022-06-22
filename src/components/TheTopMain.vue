@@ -3,7 +3,7 @@
         <div class="container py-2">
             <div class="row">
                 <div class="col-2" v-for="(card, i) in product" :key="i">
-                    <TheTopMainCard :product="product"></TheTopMainCard>
+                    <TheTopMainCard :imgurl="card.thumb" :text="card.series"></TheTopMainCard>
                 </div>
             </div>
         </div>
@@ -62,13 +62,13 @@
                     {
                         "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2019/08/BMSM_5d4361b7116261.74371456.jpg?itok=kEDR2OL8",
                         "price": "$3.99",
-                        "series": "Batman/Superman",
+                        "series": "Batman / Superman",
                         "type": "comic book"
                     },
                     {
                         "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/BMSMANN_01_300-001_HD_5f5ff17fa1d665.74704970.jpg?itok=azz5sfGk",
                         "price": "$4.99",
-                        "series": "Batman/Superman Annual",
+                        "series": "Batman / Superman Annual",
                         "type": "comic book"
                     },
                     {
